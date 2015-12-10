@@ -10,4 +10,9 @@ public class TestSuccess {
 	public void testSuccess() throws Exception {
 		//fail();
 	}
+	
+	@Test
+	public void testFail() throws Exception {
+		fail();
+	}
 }
