@@ -56,19 +56,19 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="TestFailure">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="g54ubi.chat.server.TestFailure" todir="${junit.output.dir}"/>
-            <classpath refid="Simple Chat Server.classpath"/>
-        </junit>
-    </target>
     <target name="test">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="g54ubi.chat.server.test" todir="${junit.output.dir}"/>
+            <classpath refid="Simple Chat Server.classpath"/>
+        </junit>
+    </target>
+    <target name="TestSuccess">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="g54ubi.chat.server.TestSuccess" todir="${junit.output.dir}"/>
             <classpath refid="Simple Chat Server.classpath"/>
         </junit>
     </target>

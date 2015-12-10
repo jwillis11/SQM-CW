@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestFailure {
+public class TestSuccess {
 
 	@Test
 	public void testSuccess() throws Exception {
